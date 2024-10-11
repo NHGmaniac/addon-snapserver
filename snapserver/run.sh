@@ -76,13 +76,6 @@ echo "[server]" >> "${config}"
 threads=$(bashio::config 'server_threads')
 echo "threads = ${threads}" >> "${config}"
 
-bashio::log.info "Starting avahi"
-mkdir -p /var/run/dbus
-dbus-uuidgen --ensure
-sleep 1
-rm -rf /run/dbus/dbus.pid
-dbus-daemon --system
-avahi-daemon --daemonize --no-chroot
 
 bashio::log.info "Starting SnapServer..."
 exec snapserver
