@@ -16,7 +16,6 @@ RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/te
 
 #Install avahi
 RUN apk add --no-cache avahi
-RUN rc-update add avahi-daemon
 #Install shairport-sync
 RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ shairport-sync
 #Install Snapcast
