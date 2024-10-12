@@ -1,5 +1,5 @@
 {
-  "name": "Snapserver addon for HAssOS",
+  "name": "Snapserver addon with Spotify and Airplay for HAssOS",
   "url": "https://github.com/NHGmaniac/addon-snapserver/",
-  "maintainer": "Arthur Evrard"
+  "maintainer": "NHG"
 }

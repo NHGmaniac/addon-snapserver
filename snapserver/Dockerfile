@@ -14,10 +14,9 @@ RUN \
 #Install Librespot
 RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ librespot=0.4.2-r4
 
-#Install avahi
-RUN apk add --no-cache avahi dbus
+RUN apk add --no-cache dbus avahi
 #Install shairport-sync
-RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ shairport-sync
+RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ shairport-sync
 #Install Snapcast
 RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ snapcast-server=0.29.0-r0
 
