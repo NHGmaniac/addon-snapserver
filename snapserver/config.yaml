@@ -18,6 +18,7 @@ options:
   streams: 
    - "source = spotify:///librespot?name=Spotify&bitrate=320"
    - "source = airplay:///shairport-sync?name=Airplay"
+   - "source = tcp:///0.0.0.0?name=Networkstream"
   buffer: 1000
   codec: "flac"
   send_to_muted: "false"
